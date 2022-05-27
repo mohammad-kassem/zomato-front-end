@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Profile</title>
+        <link rel="stylesheet" href="../styles/styles.css">
+    </head>
+    <body>
+        <nav class="nav-bar page-content">
+            <h3 class="logo"> Cibo </h3>
+            <img src="./assets/user_pro" alt="">
+        </nav>
+        <header class="profile-header">
+            <img src="../assets/user_pro.jp" alt="">
+            <h1> John Doe </h1>
+        </header>
+        <section class="edit-profile">
+            <h1> Edit Profile </h1>
+            <form class="edit-form">
+                <div class="cridentials-box">
+                    <input type="text" placeholder="First name" name="first-name">
+                </div>
+                <div class="cridentials-box">
+                    <input type="text" placeholder="Last name" name="last-name">
+                </div>
+                <div class="cridentials-box">
+                    <input type="text" placeholder="Date of birth" name="dob">
+                </div>
+                <div class="cridentials-box">
+                    <select placeholder="Gender" name="gender">
+                        <option value="" disabled selected hidden>Gender</option>
+                        <option value="0">Male</option>
+                        <option value="1">Female</option>
+                        <option value="2">Other</option>
+                    </select>
+                </div>
+                <div class="cridentials-box">
+                    <input type="text" placeholder="Location" name="location">
+                </div>
+                <div class="cridentials-box">
+                    <input type="password" placeholder="Old password" name="old-password">
+                </div>
+                <div class="cridentials-box">
+                    <input type="password" placeholder="New password" name="new-password">
+                </div>
+                <div class="cridentials-box">
+                    <input type="password" placeholder="Confirm new password" name="confirm-new-password">
+                </div>
+            </form>
+            <div class="save-changes">
+                <button class="btn deactivated"> Cancel </button>
+                <button class="btn"> Apply changes </button>
+            </div>
+        </section>
+    </body>
+</html>
