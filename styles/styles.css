@@ -27,14 +27,14 @@ img{
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    height: 300px;
-    margin-bottom: 10vh;
+    margin-bottom: 150px;
+    margin-top: 150px;
 }
 
 
 .hero-content{
     width: 35%;
-    margin: 20vh 0;
+    height: 100%;
 }
 
 .hero-heading{
@@ -50,6 +50,8 @@ img{
     font-size: 20px;
     line-height: 24px;
     text-align: justify;
+    margin-bottom: 150px;
+
 }
 
 .restaurants{
@@ -87,8 +89,7 @@ img{
 .restaurants-row{
     display: flex;
     justify-content: space-between;
-    height: 350px;
-    margin-top: 10vh;
+    margin-top: 50px;
 }
 
 .restaurant-box{
@@ -173,11 +174,15 @@ img{
     width: 33%;
 }
 
+.restaurant-details{
+    margin-bottom: 2vh;
+}
 
 .restaurant-details-box{
     border: 2px solid whitesmoke;
     border-radius: 10px;
     padding: 3%;
+    
 }
 
 .restaurant-main{
@@ -229,6 +234,58 @@ img{
 }
 
 
+.reviews-container{
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.reviews-container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.reviews-container-header > h1{
+    font-size: 30px;
+    color: #F63440;
+}
+
+.btn{
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #F63440;
+    padding: 1vw 3vw;
+    border: none;
+    border-radius: 10px;
+}
+
+.review-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.user > img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user > h1{
+    width: 70%;
+    margin: 0 1vw;
+    font-size: 20px;
+}
 
 
 
