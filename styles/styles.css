@@ -262,6 +262,13 @@ img{
     border-radius: 10px;
 }
 
+.review{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    padding-bottom: 5vh;
+    border-bottom: 2px solid #C4C4C4;
+}
+
 .review-header{
     display: flex;
     justify-content: space-between;
@@ -285,6 +292,16 @@ img{
     width: 70%;
     margin: 0 1vw;
     font-size: 20px;
+}
+
+.rating-small{
+    width: 42px;
+    margin: 2vh 0;
+}
+
+.review-content > h2{
+    font-size: 18px;
+    margin-bottom: 2vh;
 }
 
 
