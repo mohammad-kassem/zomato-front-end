@@ -5,15 +5,11 @@
 
 img{
     width: 100%;
+    border-radius: 10px;
 }
 
 .page-content{
     margin: 0 10%;
-}
-
-
-.indent{
-    margin: 0 3%;
 }
 
 
@@ -32,7 +28,7 @@ img{
     background-position: center;
     position: relative;
     height: 300px;
-    margin-bottom: 5vh;
+    margin-bottom: 10vh;
 }
 
 
@@ -102,15 +98,12 @@ img{
     border-radius: 10px;
 }
 
-.restaurant-box > img{
-    border-radius: 10px;
-    width: 100%;
-}
 
 .restaurant-heading{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 3%;
 }
 
 .restaurant-heading > h1{
@@ -124,7 +117,7 @@ img{
     background-color: green;
     font-size: 16px;
     line-height: 24px;
-    padding: 1%;
+    padding: 5px;
     border-radius: 10px;
 }
 
@@ -133,7 +126,7 @@ img{
     font-size: 20px;
     line-height: 24px;
     color: #696969;
-    margin: 0 3%;
+    padding: 0 3%;
 }
 
 .footer {
@@ -161,6 +154,82 @@ img{
     gap: 20px;
 }
 
+
+/* restaurant-reviews */ 
 .full-page{
     width: 100%;
 }
+
+.restaurant-images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.restaurant-image-box{
+    width: 33%;
+}
+
+
+.restaurant-details-box{
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    padding: 3%;
+}
+
+.restaurant-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100px;    
+    margin-bottom: 5vh;
+}
+
+.restaurant-main-details{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2%;
+    width: 50%;
+}
+
+.restaurant-logo > img{
+    width: 100px;
+    height: 100px;
+}
+
+.restaurant-headers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.restaurant-main-details h1{
+    font-weight: 700;
+    font-size: 40px;
+    
+}
+
+.restaurant-main-details h2{
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.restaurant-details-box > p{
+    font-size: 20px;
+}
+
+.restaurant-details-box > h3{
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+
+
+
+
+
