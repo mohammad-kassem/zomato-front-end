@@ -131,3 +131,28 @@ img{
     color: #696969;
     margin: 0 3%;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  margin-top: 10vh;
+  height: 40px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #F63440;
+}
+
+.footer a{
+    color:#fff
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: right;
+    gap: 20px;
+}
