@@ -376,8 +376,47 @@ select option {
 
 .btn-small{
     padding: 1vw 2vw;
+    margin-top: 1vh;
 }
 
 .cancel{
     background-color: #C4C4C4;
 }
+
+/* login and sign up page */
+.login{
+    width: 400px;
+    margin: 25vh auto;
+    background-color: #fff;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.login > h1{
+    margin: 5%;
+    text-align: center;
+    font-size: 22px;
+    color: #F63440;
+}
+
+.login-form{
+    margin: 5%;
+}
+
+.btn-large{
+    font-size: 18px;
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.signup-text{
+    font-size: 16px;
+    color: #F63440;
+    margin: 3vh;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
