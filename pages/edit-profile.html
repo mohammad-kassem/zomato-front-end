@@ -10,7 +10,7 @@
             <img src="./assets/user_pro" alt="">
         </nav>
         <header class="profile-header">
-            <img src="../assets/user_pro.jp" alt="">
+            <img src="../assets/user_pro.jpg" alt="">
             <h1> John Doe </h1>
         </header>
         <section class="edit-profile">
@@ -26,9 +26,9 @@
                     <input type="text" placeholder="Date of birth" name="dob">
                 </div>
                 <div class="cridentials-box">
-                    <select placeholder="Gender" name="gender">
+                    <select placeholder="Gender" name="gender" required>
                         <option value="" disabled selected hidden>Gender</option>
-                        <option value="0">Male</option>
+                        <option value="0" class="valid">Male</option>
                         <option value="1">Female</option>
                         <option value="2">Other</option>
                     </select>
@@ -47,8 +47,8 @@
                 </div>
             </form>
             <div class="save-changes">
-                <button class="btn deactivated"> Cancel </button>
-                <button class="btn"> Apply changes </button>
+                <button class="btn btn-small cancel"> Cancel </button>
+                <button class="btn btn-small"> Apply changes </button>
             </div>
         </section>
     </body>
