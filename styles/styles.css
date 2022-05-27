@@ -12,6 +12,11 @@ img{
 }
 
 
+.indent{
+    margin: 0 3%;
+}
+
+
 /* main page styles */
 .nav-bar{
     display: flex;
@@ -64,7 +69,7 @@ img{
     text-align: center;
 }
 
-.our-restaurants > h2{
+.our-restaurants > h1{
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
@@ -106,10 +111,9 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 3%;
 }
 
-.restaurant-heading > h3{
+.restaurant-heading > h1{
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -155,4 +159,8 @@ img{
     align-items: center;
     text-align: right;
     gap: 20px;
+}
+
+.full-page{
+    width: 100%;
 }
