@@ -51,7 +51,7 @@
         <section class="reviews-container page-content">
             <div class="reviews-container-header">
                 <h1> Reviews</h1>
-                <button class="btn"> Add review </button>
+                <button class="btn" id="add-review"> Add review </button>
             </div>
             <div class="review">
                 <div class="review-header">
@@ -137,6 +137,19 @@
                     </p>
                 </div>
             </div>
+        </section>
+        <section id="review-popup">
+            <div class="reviews-container-header">
+                <h1> Add Review </h1>
+                <i id="exit-review" class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="user-rating">
+                <input type="number" placeholder="Rating" id="user-rating" min="1" max="5" name="user-rating">
+            </div>
+            <div class="user-review">
+                <textarea rows="20" placeholder="Write your review" id="user-review" name="user-review" > </textarea>
+            </div>
+            <button id="add-review" class="btn"> Add review </button>  
         </section>
         <footer class="footer page-content">
             <div class="privacy-policy">

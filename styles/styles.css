@@ -308,6 +308,70 @@ img{
     margin-bottom: 2vh;
 }
 
+
+#review-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 40%;   
+    margin-left: -23%; 
+    margin-top: -13%; 
+    z-index: 20;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 2%;
+}
+
+
+#gr-out{
+    position: absolute;
+    top: 0; left: 0;
+    background: grey;
+}
+
+#exit-review{
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+input, textarea, select{
+    width: 100%;
+    height: 50px;
+    border: 2px solid #c5c5c5;
+    border-radius: 10px;
+    font-size: 17px;
+    box-sizing: border-box;
+}
+
+
+.user-rating{
+    width: 25%;
+    margin: 20px 0;
+}
+
+.user-review{
+    margin: 10px 0;
+}
+
+#user-rating{
+    padding: 0 10%;
+}
+
+#user-review{
+    width: 100%;
+    height: 150px;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 3%;
+}
+
+
+#add-review{
+    float: right;
+    margin: 10px 0;
+}
+
 /* edit-profile page */
 .profile-header{
     padding: 3%;
@@ -342,21 +406,13 @@ img{
     padding: 10px 0;
 }
 
-
-input, select{
-    width: 100%;
-    height: 50px;
-    border: 2px solid #c5c5c5;
-    border-radius: 10px;
-    font-size: 17px;
-    box-sizing: border-box;
-    padding: 0 2%;
-}
-
-input{
+.cridentials-box > input{
     padding: 0 3%;
 }
 
+.cridentials-box > select{
+    padding: 0 2%;
+}
 
 select:invalid{
     color: grey;
