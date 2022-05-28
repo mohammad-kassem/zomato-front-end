@@ -23,6 +23,48 @@
     <a class="profile-logo" href="#"><i class="fa-solid fa-user"></i></a>
   </nav>
 
+  <section>
+    <div class="table-intro">
+      <h2><a href="./adminRestaurants.html"><i class="fa-solid fa-chevron-left"></i> Restaurants</a></h2>
+    </div>
+
+    <section class="pictures-resto">
+      <h2>Add Restaurant</h2>
+      <div class="images-upload">
+        <p class="img-box"> <i class="fa-solid fa-arrow-up-from-bracket"></i> Upload Profile </p>
+        <p class="img-box"> <i class="fa-solid fa-arrow-up-from-bracket"></i> Upload Image</p>
+      </div>
+    </section>
+
+    <section class="form-restaurant">
+      <form action="#">
+        <label for="restaurant-name">Restaurant Name</label><br>
+        <input type="text" id="restaurant-name" name="restaurant-name" placeholder="Enter Restaurant Name"> <br>
+
+        <label for="description">Description</label><br>
+        <input type="text" id="description" name="description" placeholder="Enter Description"> <br>
+
+        <label for="location">Location</label><br>
+        <input type="text" id="location" name="location" placeholder="Enter Location"> <br>
+
+        <label for="country">Country</label> <br>
+        <select id="category" name="category" placeholder="Select Category">
+          <option value="australia">French Cuisine</option>
+          <option value="canada">Italian Cuisine</option>
+          <option value="usa">American Cuisine</option>
+        </select> <br>
+
+        <label for="average-cost">Average-Cost</label><br>
+        <input type="text" id="average-cost" name="average-cost" placeholder="Enter Average-Cost"> <br>
+
+        <div class="flex-buttons">
+          <button class="cancel">Cancel</button>
+          <input type="submit" value="Add">
+        </div>
+      </form>
+    </section>
+  </section>
 
 </body>
+
 </html>
