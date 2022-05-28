@@ -17,6 +17,15 @@ ul>li {
   list-style: none;
 }
 
+.color-red {
+  color: #F63440;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* navbar styling*/
 nav {
   display: flex;
@@ -124,6 +133,24 @@ nav {
 .table tbody tr:last-of-type {
   /* targeting the last border bottom of the table */
   border-bottom: 2px solid #000;
+}
+
+.column-review{
+  width: 30%;
+}
+
+.review-date {
+  color: #888;
+}
+
+.review-location {
+  font-size: 10px;
+  color: #888;
+}
+
+.review-parag {
+  font-size: 10px;
+  color: #888;
 }
 /* end of table styling */
 
