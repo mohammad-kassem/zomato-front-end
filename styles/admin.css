@@ -87,3 +87,42 @@ nav {
   background-color: #831c00;
 }
 /* end of styling the above the table section */
+
+
+/* Styling of the table */
+.table {
+  border-collapse: collapse;
+  margin: 30px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  /* ensures that the border radius set on the table will work  */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.table thead tr {
+  background-color: #fff;
+  text-align: left;
+  color: #000;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+  font-size: 1em;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.table tbody tr:last-of-type {
+  /* targeting the last border bottom of the table */
+  border-bottom: 2px solid #000;
+}
+/* end of table styling */
