@@ -184,3 +184,82 @@ nav {
 }
 /* end of pagination */
 
+/* adminRestaurantUpload page */
+.table-intro h2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.table-intro h2 a:hover {
+  text-decoration: none;
+  color: #555;
+}
+
+/* form styling */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  padding: 15px 12px 5px 0;
+  display: inline-block;
+  font-weight: bold;
+}
+
+input[type=submit] {
+  background-color: #F63440;
+  margin-top: 15px;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #831c00;
+}
+
+.cancel {
+  background-color: #aaa;
+  margin-top: 15px;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.cancel:hover {
+  background-color: #888;
+}
+
+.flex-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+h2 {
+  text-decoration: none;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.images-upload {
+  display: flex;
+  justify-content: space-between;
+  color: #F63440;
+  font-weight: bolder;
+}
+
+.img-box {
+  border: 2px dashed #F63440;
+  border-radius: 5px;
+  padding: 150px 180px;
+}
