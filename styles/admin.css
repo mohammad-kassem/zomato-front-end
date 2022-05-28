@@ -12,3 +12,52 @@ section {
   margin: 0 10%;
   margin-top: 20px;
 }
+
+ul>li {
+  list-style: none;
+}
+
+/* navbar styling*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 30px 10%;
+  background-color: #fff;
+}
+
+.logo {
+  color: #F63440;
+  font-weight: bold;
+}
+
+.profile-logo {
+  color: #F63440;
+  font-size: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-list a:hover {
+  color: #F63440;
+}
+
+.nav-list>li>.active {
+  color: #F63440;
+  padding-bottom: 18px;
+  border-bottom: 2px solid #F63440;
+}
+/* end of navbar styling */
