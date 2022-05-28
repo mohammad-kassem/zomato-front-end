@@ -61,3 +61,29 @@ nav {
   border-bottom: 2px solid #F63440;
 }
 /* end of navbar styling */
+
+/* styling of the section above the table (text + btn) */
+.table-intro {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.add-btn {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F63440;
+  color: #fff;
+  font-weight: bold;
+}
+
+.add-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.add-btn:hover {
+  background-color: #831c00;
+}
+/* end of styling the above the table section */
