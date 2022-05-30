@@ -23,8 +23,8 @@ window.onload = function () {
 
       console.log(i);
       const card = document.createElement("tr");
-      card.innerHTML = 
-      `<td><img src="image/user.png" class="tab-img"></td>
+      card.innerHTML =
+        `<td><img src="image/user.png" class="tab-img"></td>
       <td>${users[i]["first_name"]}</td>
       <td>${users[i]["last_name"]}</td>
       <td>${users[i]["email"]}</td>
@@ -33,18 +33,9 @@ window.onload = function () {
       <td>${users[i]["location"]}</td>
       <td>${users[i]["date_joined"]}</td>`
 
-      // card.innerHTML = `<td><img src="image/user.png" class="tab-img">${users[i]["first_name"]}</td>
-      // <td>12/2/2022</td>
-      // <td>${gender}</td>`
 
       user_display.appendChild(card);
     }
-
-    // <tr>
-    //   <td><img src="image/user.png" class="tab-img">User Name</td>
-    //   <td>12/2/2022</td>
-    //   <td>Active</td>
-    // </tr>
 
   })
 }
