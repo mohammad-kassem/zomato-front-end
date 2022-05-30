@@ -6,7 +6,7 @@ window.onload = function () {
   console.log(user_id);
 
   axios({
-    method: "post",
+    method: "get",
     url:
       "http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/display-restaurants.php?user_id=" +
       user_id,
