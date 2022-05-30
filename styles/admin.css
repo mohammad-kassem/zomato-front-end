@@ -134,24 +134,6 @@ nav {
   /* targeting the last border bottom of the table */
   border-bottom: 2px solid #000;
 }
-
-.column-review{
-  width: 30%;
-}
-
-.review-date {
-  color: #888;
-}
-
-.review-location {
-  font-size: 10px;
-  color: #888;
-}
-
-.review-parag {
-  font-size: 10px;
-  color: #888;
-}
 /* end of table styling */
 
 /* adminRestaurantUpload page */
