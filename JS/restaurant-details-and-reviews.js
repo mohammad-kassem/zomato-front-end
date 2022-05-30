@@ -1,20 +1,18 @@
 window.onload = function () {
-  let restaurant_details = document.getElementById("restaurant-details");
+  let reviews_section = document.getElementById("reviews-section");
   let url_string = window.location.href;
   let url = new URL(url_string);
   let user_id = url.searchParams.get("user_id");
   let restaurant_id = url.searchParams.get("restaurant_id");
-  console.log(user_id);
 
   axios({
     method: "get",
     url: `http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/retaurant-details.php?user_id=${user_id}&restaurant_id=${restaurant_id}`,
   }).then(function (response) {
     let details = response.data;
-    console.log(details);
-    let restaurant_details_section = document.createElement("section");
-    restaurant_details_section.id = "restaurant-details";
-    restaurant_details_section.innerHTML = `<div class="restaurant-images page-content">
+    let restaurant_details_content = document.createElement("div");
+    restaurant_details_content.id = "restaurant-details";
+    restaurant_details_content.innerHTML = `<div class="restaurant-images page-content">
       <div class="restaurant-image-box">
       <img src="../assets/mcdonalds.jpg" alt="">
       </div>
@@ -49,7 +47,9 @@ window.onload = function () {
           </p>
       </div>
         </div>`;
-    body = document.getElementsByTagName("body")[0];
-    body.appendChild(restaurant_details_section);
+    restaurant_details_section = document.getElementById(
+      "restaurant-details-section"
+    );
+    restaurant_details_section.appendChild(restaurant_details_content);
   });
 };
