@@ -24,15 +24,15 @@ window.onload = function () {
       console.log(i);
       const card = document.createElement("tr");
       card.innerHTML =
-        ` <td><img src="image/user.png" class="tab-img"></td>
+        ` 
+        <td><img src="${restaurants[i]["image"]}"></td>
       <td>${restaurants[i]["name"]}</td>
       <td>${restaurants[i]["location"]}</td>
-      <td>${restaurants[i]["average cost"]}</td>
+      <td>${restaurants[i]["average_cost"]}</td>
       <td>${restaurants[i]["description"]}</td>
       <td>${category_id}</td>
       <td>${restaurants[i]["date_joined"]}</td>`
 
-        // <td><img src="image/user.png" class="tab-img"></td>
       restaurant_display.appendChild(card);
     }
 
