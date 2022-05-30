@@ -24,14 +24,14 @@
                     <input type="text" id="last-name" placeholder="Last name" name="last-name">
                 </div>
                 <div class="cridentials-box">
-                    <input type="text" id="dob" placeholder="Date of birth" name="dob">
+                    <input placeholder="Date of Birth" id="dob" class="textbox-n" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" name="dob" >
                 </div>
                 <div class="cridentials-box">
                     <select placeholder="Gender" id="gender" name="gender" required>
                         <option value="" disabled selected hidden>Gender</option>
-                        <option value="0" class="valid">Male</option>
-                        <option value="1"> Female </option>
-                        <option value="2"> Other </option>
+                        <option value="1">Male</option>
+                        <option value="2"> Female </option>
+                        <option value="3"> Other </option>
                     </select>
                 </div>
                 <div class="cridentials-box">
@@ -48,7 +48,7 @@
                 </div>
             </form>
             <div class="save-changes">
-                <button id="cancel" class="btn btn-small cancel"> Cancel </button>
+                <button id="cancel-changes" class="btn btn-small cancel"> Cancel </button>
                 <button id="apply-changes" class="btn btn-small"> Apply changes </button>
             </div>
         </section>

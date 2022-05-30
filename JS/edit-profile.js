@@ -25,3 +25,31 @@ window.onload = function () {
     user_location.value = profile_details.user_location;
   });
 };
+
+let apply_changes = document.getElementById("apply-changes");
+apply_changes.addEventListener("click", function () {
+  let data = new FormData();
+  data.append("user_id", user_id);
+  data.append("first_name", first_name.value);
+  data.append("last_name", last_name.value);
+  data.append("dob", dob.value);
+  data.append("gender", gender.value);
+  data.append("location", user_location.value);
+  data.append("old_password", old_password.value);
+  data.append("new_password", new_password.value);
+  data.append("confirm_password", confirm_password.value);
+  axios({
+    method: "post",
+    url: "http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/edit-profile.php",
+    data: data,
+  }).then(function (response) {
+    console.log(response.data);
+    if (response.data.response === "Password update successfully")
+      location.reload();
+  });
+});
+
+let cancel_changes = document.getElementById("cancel-changes");
+cancel_changes.addEventListener("click", function () {
+  location.href = "../index.html";
+});
