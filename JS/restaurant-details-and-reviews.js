@@ -1,9 +1,10 @@
+let url_string = window.location.href;
+let url = new URL(url_string);
+let user_id = url.searchParams.get("user_id");
+let restaurant_id = url.searchParams.get("restaurant_id");
+
 window.onload = function () {
   let reviews_section = document.getElementById("reviews-section");
-  let url_string = window.location.href;
-  let url = new URL(url_string);
-  let user_id = url.searchParams.get("user_id");
-  let restaurant_id = url.searchParams.get("restaurant_id");
 
   axios({
     method: "get",
@@ -82,3 +83,27 @@ window.onload = function () {
     }
   });
 };
+
+let add_review_button = document.getElementById("add-review");
+add_review_button.addEventListener("click", function () {
+  let user_rating = document.getElementById("user-rating");
+  let user_review = document.getElementById("user-review");
+  let data = new FormData();
+  data.append("user_id", user_id);
+  data.append("restaurant_id", restaurant_id);
+  data.append("rating", user_rating.value);
+  data.append("content", user_review.value);
+  axios({
+    method: "post",
+    url: "http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/review-restaurant.php",
+    data: data,
+  }).then(function (response) {
+    console.log(response.data);
+    if (response.data.response == "Review added successfully") {
+      let review_popup = document.getElementById("review-popup");
+      review_popup.classList.add("hide");
+      user_rating.value = " ";
+      user_review.value = " ";
+    }
+  });
+});
