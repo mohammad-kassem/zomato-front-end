@@ -32,8 +32,10 @@
     <section class="pictures-resto">
       <h2>Add Restaurant</h2>
       <div class="images-upload">
-        <p class="img-box"> <i class="fa-solid fa-arrow-up-from-bracket"></i> Upload Profile </p>
-        <p class="img-box"> <i class="fa-solid fa-arrow-up-from-bracket"></i> Upload Image</p>
+        <p class="img-box"> <i class="fa-solid fa-arrow-up-from-bracket"></i>
+          <input type="file" class="upload-btn" id="image-profile">Upload Profile </p>
+        <p class="img-box"> <i class="fa-solid fa-arrow-up-from-bracket"></i> 
+          <input type="file" class="upload-btn" id="logo-profile">Upload Image </p>
       </div>
     </section>
 
@@ -50,20 +52,17 @@
 
         <label for="country">Country</label> <br>
         <select id="category" name="category" placeholder="Select Category">
-          <option value="australia">French Cuisine</option>
-          <option value="canada">Italian Cuisine</option>
-          <option value="usa">American Cuisine</option>
+          <option value="french">French Cuisine</option>
+          <option value="italian">Italian Cuisine</option>
+          <option value="american">American Cuisine</option>
         </select> <br>
-
-        <label for="">insert file</label> <br>
-        <input type="file"> <br>
 
         <label for="average-cost">Average-Cost</label><br>
         <input type="text" id="average-cost" name="average-cost" placeholder="Enter Average-Cost"> <br>
 
         <div class="flex-buttons">
           <button class="cancel">Cancel</button>
-          <input type="submit" value="Add">
+          <button class="submit" id="submit-btn">Submit</button>
         </div>
       </form>
     </section>

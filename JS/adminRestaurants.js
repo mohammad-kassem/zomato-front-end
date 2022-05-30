@@ -14,10 +14,10 @@ window.onload = function () {
         category_id = "french cuisine"
       }
       if (restaurants[i]["category_id"] == 2) {
-        category_id = "fast food"
+        category_id = "italian cuisine"
       }
       if (restaurants[i]["category_id"] == 3) {
-        category_id = "italian"
+        category_id = "american cuisine"
       }
       // make it a drop down menu bl profile
 

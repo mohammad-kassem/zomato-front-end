@@ -209,7 +209,7 @@ label {
   font-weight: bold;
 }
 
-input[type=submit] {
+.submit {
   background-color: #F63440;
   margin-top: 15px;
   color: white;
@@ -220,7 +220,7 @@ input[type=submit] {
   float: right;
 }
 
-input[type=submit]:hover {
+.submit:hover {
   background-color: #831c00;
 }
 
@@ -261,5 +261,5 @@ h2 {
 .img-box {
   border: 2px dashed #F63440;
   border-radius: 5px;
-  padding: 150px 180px;
+  padding: 150px 90px;
 }
