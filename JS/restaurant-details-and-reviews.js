@@ -52,4 +52,33 @@ window.onload = function () {
     );
     restaurant_details_section.appendChild(restaurant_details_content);
   });
+
+  axios({
+    method: "get",
+    url: `http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/display-reviews.php?user_id=${user_id}&restaurant_id=${restaurant_id}`,
+  }).then(function (response) {
+    let reviews = response.data;
+    console.log(reviews);
+    for (let i = 0; i < reviews.length; i++) {
+      let review_item = document.createElement("div");
+      review_item.classList.add("review");
+      review_item.innerHTML = `<div class="review-header">
+              <div class="user">
+                  <img src="../assets/user_pro.jpg" alyt="">
+                  <h1> ${reviews[i].full_name} </h1>
+              </div>
+              <div class="date">
+                  <p>${reviews[i].date_posted}</p>
+              </div>
+          </div>
+          <div class="review-content">
+              <div class="rating rating-small">
+                  <i class="fa-solid fa-star"></i> ${reviews[i].rating}
+              </div>
+              <h2>Highly recommended!</h2>
+              <p> ${reviews[i].content} </p>
+          </div>`;
+      reviews_section.appendChild(review_item);
+    }
+  });
 };
