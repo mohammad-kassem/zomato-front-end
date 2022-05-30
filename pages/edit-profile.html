@@ -3,6 +3,7 @@
     <head>
         <title>Edit Profile</title>
         <link rel="stylesheet" href="../styles/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
     <body>
         <nav class="nav-bar page-content">
@@ -26,7 +27,7 @@
                     <input type="text" id="dob" placeholder="Date of birth" name="dob">
                 </div>
                 <div class="cridentials-box">
-                    <select placeholder="Gender" id="gender" name="gender">
+                    <select placeholder="Gender" id="gender" name="gender" required>
                         <option value="" disabled selected hidden>Gender</option>
                         <option value="0" class="valid">Male</option>
                         <option value="1"> Female </option>
@@ -51,5 +52,6 @@
                 <button id="apply-changes" class="btn btn-small"> Apply changes </button>
             </div>
         </section>
+        <script src="../JS/edit-profile.js"></script>
     </body>
 </html>
