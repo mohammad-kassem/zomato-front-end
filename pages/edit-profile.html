@@ -11,44 +11,44 @@
         </nav>
         <header class="profile-header">
             <img src="../assets/user_pro.jpg" alt="">
-            <h1> John Doe </h1>
+            <h1 id="full-name"> John Doe </h1>
         </header>
         <section class="edit-profile">
             <h1> Edit Profile </h1>
             <form class="edit-form">
                 <div class="cridentials-box">
-                    <input type="text" placeholder="First name" name="first-name">
+                    <input type="text" id="first-name" placeholder="First name" name="first-name">
                 </div>
                 <div class="cridentials-box">
-                    <input type="text" placeholder="Last name" name="last-name">
+                    <input type="text" id="last-name" placeholder="Last name" name="last-name">
                 </div>
                 <div class="cridentials-box">
-                    <input type="text" placeholder="Date of birth" name="dob">
+                    <input type="text" id="dob" placeholder="Date of birth" name="dob">
                 </div>
                 <div class="cridentials-box">
-                    <select placeholder="Gender" name="gender" required>
+                    <select placeholder="Gender" id="gender" name="gender">
                         <option value="" disabled selected hidden>Gender</option>
                         <option value="0" class="valid">Male</option>
-                        <option value="1">Female</option>
-                        <option value="2">Other</option>
+                        <option value="1"> Female </option>
+                        <option value="2"> Other </option>
                     </select>
                 </div>
                 <div class="cridentials-box">
-                    <input type="text" placeholder="Location" name="location">
+                    <input type="text" id= "location" placeholder="Location" name="location">
                 </div>
                 <div class="cridentials-box">
-                    <input type="password" placeholder="Old password" name="old-password">
+                    <input type="password" id = "old-password" placeholder="Old password" name="old-password">
                 </div>
                 <div class="cridentials-box">
-                    <input type="password" placeholder="New password" name="new-password">
+                    <input type="password" id="new-password" placeholder="New password" name="new-password">
                 </div>
                 <div class="cridentials-box">
-                    <input type="password" placeholder="Confirm new password" name="confirm-new-password">
+                    <input type="password" id="confirm-password" placeholder="Confirm new password" name="confirm-new-password">
                 </div>
             </form>
             <div class="save-changes">
-                <button class="btn btn-small cancel"> Cancel </button>
-                <button class="btn btn-small"> Apply changes </button>
+                <button id="cancel" class="btn btn-small cancel"> Cancel </button>
+                <button id="apply-changes" class="btn btn-small"> Apply changes </button>
             </div>
         </section>
     </body>

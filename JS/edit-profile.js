@@ -1,0 +1,12 @@
+let url_string = window.location.href;
+let url = new URL(url_string);
+let user_id = url.searchParams.get("user_id");
+let full_name = document.getElementById("full-name");
+let fisrt_name = document.getElementById("first-name");
+let last_name = document.getElementById("last-name");
+let dob = document.getElementById("dob");
+let gender = document.getElementById("gender");
+let location = document.getElementById("location");
+let old_password = document.getElementById("old-password");
+let new_password = document.getElementById("new-password");
+let confirm_password = document.getElementById("confirm-password");
