@@ -13,7 +13,7 @@ login_button.addEventListener("click", function () {
     data: data,
   }).then(function (response) {
     if (response.data.response == "Logged in") {
-      window.location.replace("../index.html?" + response.data[1]);
+      window.location.href = "../index.html?user_id=" + response.data.user_id;
     }
   });
 });

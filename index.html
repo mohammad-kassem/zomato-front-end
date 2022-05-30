@@ -4,7 +4,7 @@
         <title> Cibo </title>
         <link rel="stylesheet" href="./styles/styles.css">
         <script src="https://kit.fontawesome.com/1ff5291ea3.js" crossorigin="anonymous" async></script> <!--importing fontawesome icons-->
-
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
     <body>
         <nav class="nav-bar page-content">
@@ -24,55 +24,8 @@
                 <h1> Our restaurants </h1>
                 <hr class="horizontal-line">
             </div>
-            <div class="restaurants-container">
-                <div class="restaurants-row">
-                    <div class="restaurant-box">
-                        <img src="./assets/mcdonalds.jpg" alt="">
-                        <div class="restaurant-heading indent">
-                            <h1> McDonald's </h1>
-                            <div class="rating">
-                                <i class="fa-solid fa-star"></i> 4.4
-                            </div>
-                        </div>
-                        <p class="category"> fast food</p>
-                        <p class="location"> beirut, lebanon</p>
-                    </div>
-                    <div class="restaurant-box">
-                        <img src="./assets/mcdonalds.jpg" alt="">
-                        <div class="restaurant-heading">
-                            <h1> McDonald's </h1>
-                            <div class="rating">
-                                <i class="fa-solid fa-star"></i> 4.4
-                            </div>
-                        </div>
-                        <p class="category"> fast food</p>
-                        <p class="location"> beirut, lebanon</p>
-                    </div>
-                    <div class="restaurant-box">
-                        <img src="./assets/mcdonalds.jpg" alt="">
-                        <div class="restaurant-heading indent">
-                            <h1> McDonald's </h1>
-                            <div class="rating">
-                                <i class="fa-solid fa-star"></i> 4.4
-                            </div>
-                        </div>
-                        <p class="category"> fast food</p>
-                        <p class="location"> beirut, lebanon</p>
-                    </div>
-                </div>
-                <div class="restaurants-row">
-                    <div class="restaurant-box">
-                        <img src="./assets/mcdonalds.jpg" alt="">
-                        <div class="restaurant-heading indent">
-                            <h1> McDonald's </h1>
-                            <div class="rating">
-                                <i class="fa-solid fa-star"></i> 4.4
-                            </div>
-                        </div>
-                        <p class="category"> fast food</p>
-                        <p class="location"> beirut, lebanon</p>
-                    </div>
-                </div>
+            <div id="restaurants-display" class="restaurants-container">
+
             </div>
         </section>
         <footer class="footer page-content">
@@ -89,5 +42,6 @@
                 <a href="#"><i class="fa-brands fa-twitter fa-lg"></i></a>
             </div>
         </footer>
+        <script src="./JS/user-restaurants.js"></script>
     </body>
 </html>
