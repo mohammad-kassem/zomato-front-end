@@ -25,7 +25,7 @@ window.onload = function () {
       const card = document.createElement("tr");
       card.innerHTML =
         ` 
-        <td><img src="${restaurants[i]["image"]}"></td>
+        <td><img class="img-sizing" src="data:image/png;base64,${restaurants[i]["image"]}"></td>
       <td>${restaurants[i]["name"]}</td>
       <td>${restaurants[i]["location"]}</td>
       <td>${restaurants[i]["average_cost"]}</td>

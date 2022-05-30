@@ -39,9 +39,10 @@ window.onload = function () {
         mydata.append("description", description.value);
         var category_id = category.options[category.selectedIndex].value;
         mydata.append("category_id", category_id);
-        mydata.append("image", profile.value);
+        mydata.append("image", base64String);
         mydata.append("logo", logo.value);
 
+        
         axios({
           method: 'post',
           url: 'http://localhost/zomato-back-end/APIs/admin-upload.php',
