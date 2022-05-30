@@ -20,9 +20,7 @@ window.onload = function () {
       console.log(i);
       const card = document.createElement("tr");
       card.innerHTML =
-        `<td><img src="image/user.png" class="tab-img"></td>
-      <td>${reviews[i]["name"]}</td>
-      <td><img src="image/user.png" class="tab-img"></td>
+        `<td>${reviews[i]["name"]}</td>
       <td>${reviews[i]["first_name"]}</td>
       <td>${reviews[i]["last_name"]}</td>
       <td>${reviews[i]["rating"]}</td>
