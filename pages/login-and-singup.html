@@ -3,6 +3,7 @@
     <head>
         <title>Welcome to Cibo</title>
         <link rel="stylesheet" href="../styles/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
     <body>
         <nav class="nav-bar page-content">
@@ -13,14 +14,15 @@
             <h1> Log In </h1>
             <div class="login-form">
                 <div class="cridentials-box">
-                    <input type="text" placeholder="Email adress" name="email">
+                    <input type="text" id="user-email" placeholder="Email adress" name="email">
                 </div>
                 <div class="cridentials-box">
-                    <input type="password" placeholder="Password" name="password">
+                    <input type="password" id="user-password" placeholder="Password" name="password">
                 </div>
-                <button class="btn btn-large"> Log In </button>
+                <button id="login-button" class="btn btn-large"> Log In </button>
                 <div class="signup-text"> Create New Account </div>
             </div>
         </section>
+        <script src="../JS/login-and-signup.js"></script>
     </body>
 </html>
