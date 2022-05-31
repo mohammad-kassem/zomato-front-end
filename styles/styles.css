@@ -19,6 +19,9 @@ img{
     margin: 0 10%;
 }
 
+a{
+    text-decoration: none;
+}
 
 /* main page styles */
 /* .nav-bar{

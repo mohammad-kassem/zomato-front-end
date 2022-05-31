@@ -3,7 +3,7 @@ window.onload = function () {
   let url_string = window.location.href;
   let url = new URL(url_string);
   let user_id = url.searchParams.get("user_id");
-  if (!user_id) window.location.href = "./login-and-singup.html";
+  // if (!user_id) window.location.href = "./login-and-singup.html";
 
   axios({
     method: "get",
