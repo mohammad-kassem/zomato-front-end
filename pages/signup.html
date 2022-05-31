@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>CIBO | Log In </title>
+        <title>CIBO | Sign Up </title>
         <link rel="stylesheet" href="../styles/styles.css">
         <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     </head>
@@ -11,16 +11,21 @@
             <img src="./assets/user_pro" alt="">
         </nav>
         <section class="login">
-            <h1> Log In </h1>
+            <h1> Sign Up </h1>
             <form class="login-form">
+                <div class="cridentials-box">
+                    <input type="text" id="first-name" placeholder="First name*" name="email" required>
+                </div>
+                <div class="cridentials-box">
+                    <input type="text" id="last-name" placeholder="Last name*" name="email" required>
+                </div>
                 <div class="cridentials-box">
                     <input type="text" id="user-email" placeholder="Email address*" name="email" required>
                 </div>
                 <div class="cridentials-box">
                     <input type="password" id="user-password" placeholder="Password*" name="password" required>
                 </div>
-                <button id="login-button" class="btn btn-large" type="submit"> Log In </button>
-                <div id="signup-text"><a href="./signup.html"> Create New Account </a></div>
+                <button id="login-button" class="btn btn-large" type="submit"> Get Started </button>
             </form>
         </section>
         <script src="../JS/login-and-signup.js"></script>
