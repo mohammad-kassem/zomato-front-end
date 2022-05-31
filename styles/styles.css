@@ -470,7 +470,7 @@ select option {
     margin-top: 1vh;
 }
 
-.signup-text{
+#signup-text{
     font-size: 16px;
     color: #F63440;
     margin: 3vh;

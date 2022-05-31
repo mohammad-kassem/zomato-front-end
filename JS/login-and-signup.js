@@ -1,7 +1,7 @@
+localStorage.clear();
+
 let login_button = document.getElementById("login-button");
 login_button.addEventListener("click", function () {
-  console.log("hello");
-
   let user_email = document.getElementById("user-email");
   let user_password = document.getElementById("user-password");
   let data = new FormData();
@@ -12,8 +12,12 @@ login_button.addEventListener("click", function () {
     url: "http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/login.php",
     data: data,
   }).then(function (response) {
-    if (response.data.response == "Logged in") {
+    if (response.data.response == "User Logged in") {
       window.location.href = "../index.html?user_id=" + response.data.user_id;
+    } else if (response.data.response == "Admin Logged in") {
+      window.location.href =
+        "./adminRestaurants.html?user_id=" + response.data.user_id;
     }
+    localStorage.setItem("user_id", response.data.user_id);
   });
 });

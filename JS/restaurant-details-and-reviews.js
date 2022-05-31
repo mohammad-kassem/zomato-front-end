@@ -2,6 +2,7 @@ let url_string = window.location.href;
 let url = new URL(url_string);
 let user_id = url.searchParams.get("user_id");
 let restaurant_id = url.searchParams.get("restaurant_id");
+console.log("hello");
 
 window.onload = function () {
   let reviews_section = document.getElementById("reviews-section");
