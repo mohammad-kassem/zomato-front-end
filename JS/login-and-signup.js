@@ -14,9 +14,11 @@ login_button.addEventListener("click", function () {
   }).then(function (response) {
     if (response.data.response == "User Logged in") {
       window.location.href = "../index.html?user_id=" + response.data.user_id;
+      
     } else if (response.data.response == "Admin Logged in") {
       window.location.href =
         "./adminRestaurants.html?user_id=" + response.data.user_id;
+      
     }
     localStorage.setItem("user_id", response.data.user_id);
   });
