@@ -445,7 +445,7 @@ select option {
 }
 
 /* login and sign up page */
-.login{
+.login, .signup{
     width: 400px;
     margin: 25vh auto;
     background-color: #fff;
@@ -453,14 +453,16 @@ select option {
     border-radius: 10px;
 }
 
-.login > h1{
+.login > h1, 
+.signup > h1{
     margin: 5%;
     text-align: center;
     font-size: 22px;
     color: #F63440;
 }
 
-.login-form{
+.login-form, 
+.signup-form{
     margin: 5%;
 }
 
@@ -470,7 +472,7 @@ select option {
     margin-top: 1vh;
 }
 
-#signup-text{
+#signup-text, .new-account{
     font-size: 16px;
     color: #F63440;
     margin: 3vh;
@@ -479,5 +481,11 @@ select option {
     cursor: pointer;
 }
 
+.new-account:hover {
+    color: #831c00;
+}
 
+.signup-btn:hover{
+    background-color: #831c00;
+}
 
