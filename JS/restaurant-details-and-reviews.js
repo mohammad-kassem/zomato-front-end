@@ -1,7 +1,7 @@
 let url_string = window.location.href;
 let url = new URL(url_string);
 let user_id = url.searchParams.get("user_id");
-if (!user_id) window.location.href = "./login-and-singup.html";
+//if (!user_id) window.location.href = "./login-and-singup.html";
 let restaurant_id = url.searchParams.get("restaurant_id");
 
 
@@ -88,7 +88,7 @@ window.onload = function () {
   });
 };
 
-// submits the review to teh database hides the review popup and resets its values
+// submits the review to the database hides the review popup and resets its values
 let add_review_button = document.getElementById("add-review");
 add_review_button.addEventListener("click", function () {
   let user_rating = document.getElementById("user-rating");
@@ -105,9 +105,9 @@ add_review_button.addEventListener("click", function () {
   }).then(function (response) {
     if (response.data.response == "Review added successfully") {
       let review_popup = document.getElementById("review-popup");
-      review_popup.classList.add("hide");
       user_rating.value = " ";
       user_review.value = " ";
+      review_popup.classList.add("hide");
     }
   });
 });
