@@ -1,8 +1,6 @@
+
 window.onload = function () {
-  let restaurant_display = document.getElementById("restaurants-display");
-  let url_string = window.location.href;
-  let url = new URL(url_string);
-  let user_id = url.searchParams.get("user_id");
+  user_id = localStorage.getItem("user_id");
   if (!user_id) window.location.href = "./pages/login.html";
 
   axios({
@@ -11,6 +9,7 @@ window.onload = function () {
       "http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/display-restaurants.php?user_id=" +
       user_id,
   }).then(function (response) {
+    let restaurant_display = document.getElementById("restaurants-display");
     // every row contains 3 retsaurant boxes so at i=0,3,6..... we create a new row
     let restaurants = response.data;
     for (let i = 0; i < restaurants.length; i++) {
@@ -36,6 +35,8 @@ window.onload = function () {
 
       //and always append the restaurant boxes to the most recent row
       row.appendChild(restaurant_box);
+
+      // this takes you to the restaurant you clicked on with the restaurant id in the url
       restaurant_box.addEventListener("click", function () {
         window.location.href =
           "./pages/restaurant-reviews.html?user_id=" + user_id + "&restaurant_id=" + restaurant_box.id;

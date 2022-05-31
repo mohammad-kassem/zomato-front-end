@@ -1,7 +1,7 @@
+user_id = localStorage.getItem("user_id");
+if (!user_id) window.location.href = "./pages/login.html";
 let url_string = window.location.href;
-let url = new URL(url_string);
-let user_id = url.searchParams.get("user_id");
-//if (!user_id) window.location.href = "./login-and-singup.html";
+  let url = new URL(url_string);
 let restaurant_id = url.searchParams.get("restaurant_id");
 
 
@@ -112,15 +112,21 @@ add_review_button.addEventListener("click", function () {
   });
 });
 
+// shows the new review pop up"
 new_review = document.getElementById("new-review");
 new_review.addEventListener("click", function(){
   review_popup = document.getElementById("review-popup");
   review_popup.classList.remove("hide");
 })
 
-
+//closes the new review popup
 exit_review = document.getElementById("exit-review");
 exit_review.addEventListener("click", function(){
   review_popup = document.getElementById("review-popup");
   review_popup.classList.add("hide");
+  let user_rating = document.getElementById("user-rating");
+  let user_review = document.getElementById("user-review");
+  user_rating.value = " ";
+  user_review.value = " ";
+
 })

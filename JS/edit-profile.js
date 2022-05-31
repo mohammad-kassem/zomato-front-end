@@ -1,8 +1,6 @@
 // defining the input variables
-let url_string = window.location.href;
-let url = new URL(url_string);
-let user_id = url.searchParams.get("user_id");
-if (!user_id) window.location.href = "./login-and-singup.html";
+user_id = localStorage.getItem("user_id");
+if (!user_id) window.location.href = "./pages/login.html";
 let full_name = document.getElementById("full-name");
 let first_name = document.getElementById("first-name");
 let last_name = document.getElementById("last-name");
