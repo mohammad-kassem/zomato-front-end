@@ -1,25 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
 }
 
-body{
+body {
     background-color: #f5f5f5;
 }
 
-img{
+img {
     width: 100%;
     border-radius: 10px;
 }
 
-.page-content{
+.page-content {
     margin: 0 10%;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -38,111 +38,116 @@ nav {
     height: 20px;
     padding: 20px 10%;
     background-color: #fff;
-  }
-  
-  .logo {
+}
+
+.logo {
     color: #F63440;
     font-weight: bold;
-  }
-  
-  .profile-logo {
+}
+
+.profile-logo {
     color: #F63440;
     font-size: 20px;
-  }
+}
 
-.hero-container{
-    background: url("./assets/delicious.jpg");
+.showcase {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("/assets/hero_new.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    margin-bottom: 150px;
-    margin-top: 150px;
+    height: 70vh;
+    margin-bottom: 50px;
 }
 
 
-.hero-content{
+.hero-content {
     width: 35%;
     height: 100%;
 }
 
-.hero-heading{
+.hero-heading {
     font-weight: 700;
     font-size: 48px;
     line-height: 58px;
     color: #F63440;
     margin-bottom: 10px;
+    margin-top: 70px;
 }
 
-.hero-paragraph{
+.hero-paragraph {
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     text-align: justify;
     margin-bottom: 150px;
-
+    color: #fff;
 }
 
-.restaurants{
+.restaurants {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /* restaurants list */
-.our-restaurants{
+.our-restaurants {
     margin: 0 auto;
     max-width: 50%;
     text-align: center;
 }
 
-.our-restaurants > h1{
+.our-restaurants>h1 {
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
     width: 100%;
     color: #F63440;
+    padding-bottom: 5px;
+    border-bottom: 5px solid #F63440;
 }
 
-.our-restaurants > hr{
+.our-restaurants>hr {
     width: 100%;
 }
 
-.restaurants-container{
+.restaurants-container {
     display: flex;
     flex-direction: column;
     gap: 5px;
     width: 100%;
 }
 
-.restaurants-row{
+.restaurants-row {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
 
-.restaurant-box{
+.restaurant-box {
     width: 30%;
     height: 100%;
     border: 2px solid whitesmoke;
     border-radius: 10px;
+    background-color: #fff;
+    padding: 20px 15px;
 }
 
 
-.restaurant-heading{
+.restaurant-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 3%;
 }
 
-.restaurant-heading > h1{
+.restaurant-heading>h1 {
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
 }
 
-.rating{
+.rating {
     color: white;
     background-color: green;
     font-size: 16px;
@@ -151,7 +156,7 @@ nav {
     border-radius: 10px;
 }
 
-.restaurant-box p{
+.restaurant-box p {
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -160,22 +165,22 @@ nav {
 }
 
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5vw;
-  margin-top: 10vh;
-  height: 40px;
-  color: #fff;
-  font-weight: bold;
-  background-color: #F63440;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw;
+    margin-top: 10vh;
+    height: 60px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #F63440;
 }
 
-.footer a{
-    color:#fff
+.footer a {
+    color: #fff
 }
 
-.socials{
+.socials {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -185,12 +190,12 @@ nav {
 }
 
 
-/* restaurant-reviews */ 
-.full-page{
+/* restaurant-reviews */
+.full-page {
     width: 100%;
 }
 
-.restaurant-images{
+.restaurant-images {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,63 +204,63 @@ nav {
     margin-bottom: 2vh;
 }
 
-.restaurant-image-box{
+.restaurant-image-box {
     width: 33%;
 }
 
-.restaurant-details{
+.restaurant-details {
     margin-bottom: 2vh;
 }
 
-.restaurant-details-box{
+.restaurant-details-box {
     border: 2px solid whitesmoke;
     border-radius: 10px;
     padding: 3%;
-    
+
 }
 
-.restaurant-main{
+.restaurant-main {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    height: 100px;    
+    height: 100px;
     margin-bottom: 5vh;
 }
 
-.restaurant-main-details{
+.restaurant-main-details {
     display: flex;
     justify-content: flex-start;
     gap: 2%;
     width: 50%;
 }
 
-.restaurant-logo > img{
+.restaurant-logo>img {
     width: 100px;
     height: 100px;
 }
 
-.restaurant-headers{
+.restaurant-headers {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.restaurant-main-details h1{
+.restaurant-main-details h1 {
     font-weight: 700;
     font-size: 40px;
-    
+
 }
 
-.restaurant-main-details h2{
+.restaurant-main-details h2 {
     font-weight: 500;
     font-size: 24px;
 }
 
-.restaurant-details-box > p{
+.restaurant-details-box>p {
     font-size: 20px;
 }
 
-.restaurant-details-box > h3{
+.restaurant-details-box>h3 {
     margin-top: 3vh;
     margin-bottom: 1vh;
     font-weight: 500;
@@ -263,25 +268,25 @@ nav {
 }
 
 
-.reviews-container{
+.reviews-container {
     border: 2px solid whitesmoke;
     border-radius: 10px;
     padding: 3%;
 }
 
-.reviews-container-header{
+.reviews-container-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
 }
 
-.reviews-container-header > h1{
+.reviews-container-header>h1 {
     font-size: 30px;
     color: #F63440;
 }
 
-.btn{
+.btn {
     font-size: 14px;
     font-weight: 700;
     color: #fff;
@@ -291,14 +296,14 @@ nav {
     border-radius: 10px;
 }
 
-.review{
+.review {
     margin-top: 5vh;
     margin-bottom: 5vh;
     padding-bottom: 5vh;
     border-bottom: 2px solid #C4C4C4;
 }
 
-.review-header{
+.review-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -311,37 +316,37 @@ nav {
     width: 50%;
 }
 
-.user > img{
+.user>img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
 
-.user > h1{
+.user>h1 {
     width: 70%;
     margin: 0 1vw;
     font-size: 20px;
 }
 
-.rating-small{
+.rating-small {
     width: 42px;
     margin: 2vh 0;
 }
 
-.review-content > h2{
+.review-content>h2 {
     font-size: 18px;
     margin-bottom: 2vh;
 }
 
 
-#review-popup{
+#review-popup {
     position: fixed;
     top: 50%;
     left: 50%;
-    width: 40%;   
-    margin-left: -23%; 
+    width: 40%;
+    margin-left: -23%;
     margin-top: -13%;
-    margin-bottom: 13%; 
+    margin-bottom: 13%;
     z-index: 20;
     background-color: #fff;
     box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.05);
@@ -349,23 +354,26 @@ nav {
     padding: 2%;
 }
 
-.hide{
+.hide {
     display: none;
 }
 
-#gr-out{
+#gr-out {
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     background: grey;
 }
 
-#exit-review{
+#exit-review {
     font-size: 24px;
     cursor: pointer;
 }
 
 
-input, textarea, select{
+input,
+textarea,
+select {
     width: 100%;
     height: 50px;
     border: 2px solid #c5c5c5;
@@ -375,20 +383,20 @@ input, textarea, select{
 }
 
 
-.user-rating{
+.user-rating {
     width: 25%;
     margin: 20px 0;
 }
 
-.user-review{
+.user-review {
     margin: 10px 0;
 }
 
-#user-rating{
+#user-rating {
     padding: 0 10%;
 }
 
-#user-review{
+#user-review {
     width: 100%;
     height: 150px;
     font-size: 17px;
@@ -397,13 +405,13 @@ input, textarea, select{
 }
 
 
-#add-review{
+#add-review {
     float: right;
     margin: 10px 0;
 }
 
 /* edit-profile page */
-.profile-header{
+.profile-header {
     padding: 3%;
     width: 50%;
     margin: 20px auto;
@@ -412,11 +420,11 @@ input, textarea, select{
     border-radius: 10px;
 }
 
-.profile-header > h1{
+.profile-header>h1 {
     font-size: 24px;
 }
 
-.edit-profile{
+.edit-profile {
     padding: 3%;
     width: 50%;
     margin: 0 auto;
@@ -425,52 +433,53 @@ input, textarea, select{
     border-radius: 10px;
 }
 
-.edit-profile > h1{
+.edit-profile>h1 {
     font-size: 24px;
     color: #F63440;
     margin: 0 0 10px 0;
 }
 
-.cridentials-box{
+.cridentials-box {
     width: 100%;
     padding: 10px 0;
 }
 
-.cridentials-box > input{
+.cridentials-box>input {
     padding: 0 3%;
 }
 
-.cridentials-box > select{
+.cridentials-box>select {
     padding: 0 2%;
 }
 
-select:invalid{
+select:invalid {
     color: grey;
 }
 
-select option { 
-    color: black; 
+select option {
+    color: black;
 }
 
 
-.save-changes{
+.save-changes {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
 }
 
-.btn-small{
+.btn-small {
     padding: 1vw 2vw;
     margin-top: 1vh;
 }
 
-.cancel{
+.cancel {
     background-color: #C4C4C4;
 }
 
 /* login and sign up page */
-.login, .signup{
+.login,
+.signup {
     width: 400px;
     margin: 25vh auto;
     background-color: #fff;
@@ -478,26 +487,27 @@ select option {
     border-radius: 10px;
 }
 
-.login > h1, 
-.signup > h1{
+.login>h1,
+.signup>h1 {
     margin: 5%;
     text-align: center;
     font-size: 22px;
     color: #F63440;
 }
 
-.login-form, 
-.signup-form{
+.login-form,
+.signup-form {
     margin: 5%;
 }
 
-.btn-large{
+.btn-large {
     font-size: 18px;
     width: 100%;
     margin-top: 1vh;
 }
 
-#signup-text, .new-account{
+#signup-text,
+.new-account {
     font-size: 16px;
     color: #F63440;
     margin: 3vh;
@@ -510,7 +520,6 @@ select option {
     color: #831c00;
 }
 
-.signup-btn:hover{
+.signup-btn:hover {
     background-color: #831c00;
 }
-
