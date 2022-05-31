@@ -3,7 +3,7 @@ window.onload = function () {
 
   axios({
     method: "post",
-    url: "http://localhost/zomato-back-end/APIs/admin-display-reviews.php",
+    url: "http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/admin-display-reviews.php",
   }).then(function (response) {
     var reviews = response.data;
     for (var i = 0; i < reviews.length; i++) {
@@ -21,7 +21,7 @@ window.onload = function () {
       console.log(i);
       const card = document.createElement("tr");
       card.id = reviews[i].review_id;
-      card.innerHTML = `<td>${reviews[i]["name"]}</td>
+      card.innerHTML = `<td>${reviews[i]["restaurant_name"]}</td>
       <td>${reviews[i]["first_name"]}</td>
       <td>${reviews[i]["last_name"]}</td>
       <td>${reviews[i]["rating"]}</td>

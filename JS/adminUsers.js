@@ -3,7 +3,7 @@ window.onload = function () {
 
   axios({
     method: 'post',
-    url: 'http://localhost/zomato-back-end/APIs/admin-display-users.php',
+    url: 'http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/admin-display-users.php',
   }).then(function (response) {
 
     var users = response.data

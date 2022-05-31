@@ -37,7 +37,7 @@ apply_changes.addEventListener("click", function () {
   data.append("last_name", last_name.value);
   data.append("dob", dob.value);
   data.append("gender", gender.value);
-  data.append("location", user_location.value);
+  data.append("user_location", user_location.value);
   data.append("old_password", old_password.value);
   data.append("new_password", new_password.value);
   data.append("confirm_password", confirm_password.value);

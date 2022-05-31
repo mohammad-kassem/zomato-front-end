@@ -45,7 +45,7 @@ window.onload = function () {
         
         axios({
           method: 'post',
-          url: 'http://localhost/zomato-back-end/APIs/admin-upload.php',
+          url: 'http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/admin-upload.php',
           data: mydata,
         })
           .then(function (response) {

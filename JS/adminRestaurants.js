@@ -3,7 +3,7 @@ window.onload = function () {
 
   axios({
     method: "post",
-    url: "http://localhost/zomato-back-end/APIs/admin-display-restaurants.php",
+    url: "http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/admin-display-restaurants.php",
   }).then(function (response) {
     var restaurants = response.data;
     for (var i = 0; i < restaurants.length; i++) {
@@ -24,7 +24,7 @@ window.onload = function () {
       card.innerHTML =
         ` 
         <td><img class="img-sizing" src="data:image/png;base64,${restaurants[i]["image"]}"></td>
-      <td>${restaurants[i]["name"]}</td>
+      <td>${restaurants[i]["restaurant_name"]}</td>
       <td>${restaurants[i]["location"]}</td>
       <td>${restaurants[i]["average_cost"]}</td>
       <td>${restaurants[i]["description"]}</td>
