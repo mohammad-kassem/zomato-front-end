@@ -24,7 +24,7 @@ window.onload = function () {
       console.log(i);
       const card = document.createElement("tr");
       card.innerHTML =
-        `<td><img src="image/user.png" class="tab-img"></td>
+        `<td><img src="/assets/theuser.png" height="50px" width="50px" class="tab-img"></td>
       <td>${users[i]["first_name"]}</td>
       <td>${users[i]["last_name"]}</td>
       <td>${users[i]["email"]}</td>
