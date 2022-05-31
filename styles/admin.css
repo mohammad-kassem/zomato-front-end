@@ -72,6 +72,7 @@ nav {
   padding-bottom: 18px;
   border-bottom: 2px solid #F63440;
 }
+
 /* end of navbar styling */
 
 /* styling of the section above the table (text + btn) */
@@ -98,6 +99,7 @@ nav {
 .add-btn:hover {
   background-color: #831c00;
 }
+
 /* end of styling the above the table section */
 
 
@@ -137,6 +139,7 @@ nav {
   /* targeting the last border bottom of the table */
   border-bottom: 2px solid #000;
 }
+
 /* end of table styling */
 
 /* adminRestaurantUpload page */
@@ -151,7 +154,9 @@ nav {
 }
 
 /* form styling */
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -223,4 +228,20 @@ h2 {
   border-radius: 10px;
   width: 50px;
   height: 50px;
+}
+
+@media screen and (max-width: 480px) {
+  .img-box {
+    padding: 50px 10px;
+  }
+
+  .nav-list {
+    width: 40%;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .table-responsive {
+    overflow-x: auto;
+  }
 }
