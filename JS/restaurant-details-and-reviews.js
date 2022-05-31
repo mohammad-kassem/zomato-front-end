@@ -18,7 +18,6 @@ window.onload = function () {
     restaurant_details_content.id = "restaurant-details";
     restaurant_details_content.innerHTML = `<div class="restaurant-images page-content">
       <div class="restaurant-image-box">
-        <img src="../assets/mcdonalds.jpg" alt="">
       </div>
   </div>
   <div class="restaurant-details page-content">
