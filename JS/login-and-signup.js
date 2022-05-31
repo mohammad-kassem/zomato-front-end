@@ -1,7 +1,8 @@
 localStorage.clear();
 
-let login_button = document.getElementById("login-button");
-login_button.addEventListener("click", function () {
+let login = document.getElementById("login");
+login.addEventListener("submit", function (event) {
+  event.preventDefault();
   let user_email = document.getElementById("user-email");
   let user_password = document.getElementById("user-password");
   let data = new FormData();

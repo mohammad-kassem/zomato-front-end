@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -16,14 +19,36 @@ img{
     margin: 0 10%;
 }
 
+a{
+    text-decoration: none;
+}
 
 /* main page styles */
-.nav-bar{
+/* .nav-bar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px;
-}
+} */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    padding: 20px 10%;
+    background-color: #fff;
+  }
+  
+  .logo {
+    color: #F63440;
+    font-weight: bold;
+  }
+  
+  .profile-logo {
+    color: #F63440;
+    font-size: 20px;
+  }
 
 .hero-container{
     background: url("./assets/delicious.jpg");
@@ -445,7 +470,7 @@ select option {
 }
 
 /* login and sign up page */
-.login{
+.login, .signup{
     width: 400px;
     margin: 25vh auto;
     background-color: #fff;
@@ -453,14 +478,16 @@ select option {
     border-radius: 10px;
 }
 
-.login > h1{
+.login > h1, 
+.signup > h1{
     margin: 5%;
     text-align: center;
     font-size: 22px;
     color: #F63440;
 }
 
-.login-form{
+.login-form, 
+.signup-form{
     margin: 5%;
 }
 
@@ -470,7 +497,7 @@ select option {
     margin-top: 1vh;
 }
 
-#signup-text{
+#signup-text, .new-account{
     font-size: 16px;
     color: #F63440;
     margin: 3vh;
@@ -479,5 +506,11 @@ select option {
     cursor: pointer;
 }
 
+.new-account:hover {
+    color: #831c00;
+}
 
+.signup-btn:hover{
+    background-color: #831c00;
+}
 
