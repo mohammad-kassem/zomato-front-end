@@ -68,7 +68,7 @@ nav {
 
 .hero-heading {
     font-weight: 700;
-    font-size: 48px;
+    font-size: calc((3.5 - 1) * 1.2vw + 1rem);
     line-height: 58px;
     color: #F63440;
     margin-bottom: 10px;
@@ -77,7 +77,7 @@ nav {
 
 .hero-paragraph {
     font-weight: 400;
-    font-size: 20px;
+    font-size: calc((1.6 - 1) * 1.2vh + 1rem);
     line-height: 24px;
     text-align: justify;
     margin-bottom: 150px;
@@ -535,3 +535,17 @@ select option {
 .signup-btn:hover {
     background-color: #831c00;
 }
+
+@media screen and (max-width: 830px) {
+    .restaurants-row {
+      flex-direction: column;
+    }
+
+    .restaurant-box{
+        width: 100%;
+    }
+
+    .hero-content{
+        width: 100%;
+    } 
+  }
