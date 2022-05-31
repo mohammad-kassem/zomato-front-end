@@ -26,7 +26,7 @@ window.onload = function () {
           <div class="restaurant-main">
               <div class="restaurant-main-details">
                   <div class="restaurant-logo">
-                      <img src="../assets/mcdonalds.jpg" alt="">
+                      <img class="img-sizing" src="data:image/png;base64,${details.image} alt="">
                   </div>  
                   <div class="restaurant-headers">
                       <h1> ${details.restaurant_name} </h1>
