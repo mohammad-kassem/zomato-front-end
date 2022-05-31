@@ -41,7 +41,7 @@ window.onload = function () {
 
 
         let mydata = new FormData();
-        mydata.append("name", restaurant_name.value);
+        mydata.append("restaurant_name", restaurant_name.value);
         mydata.append("location", location.value);
         mydata.append("average_cost", average_cost.value);
         mydata.append("description", description.value);
