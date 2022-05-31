@@ -10,7 +10,7 @@
     <body>
         <nav>
             <a href="/index.html"><h1 class="logo">CIBO</h1></a>
-            <a class="profile-logo" href="./pages/edit-profile.html"><i class="fa-solid fa-user"></i></a>
+            <a class="profile-logo" href="./edit-profile.html"><i class="fa-solid fa-user"></i></a>
           </nav>
         <section id = "restaurant-details-section">
 
@@ -22,19 +22,19 @@
                 <button id="new-review" class="btn"> Add review </button>
             </div>
         </section>
-        <section id="review-popup" class="hide">
+        <form id="review-popup" class="hide">
             <div class="reviews-container-header">
                 <h1> Add Review </h1>
                 <i id="exit-review" class="fa-solid fa-xmark"></i>
             </div>
-            <div id="user-rating" class="user-rating">
-                <input type="number" placeholder="Rating" id="user-rating" min="1" max="5" name="user-rating">
+            <div class="user-rating">
+                <input type="number" placeholder="Rating" id="user-rating" min="1" max="5" name="user-rating" required>
             </div>
-            <div id="user-review" class="user-review">
-                <textarea rows="20" placeholder="Write your review" id="user-review" name="user-review" > </textarea>
+            <div class="user-review">
+                <textarea rows="20" placeholder="Write your review" id="user-review" name="user-review"  required></textarea>
             </div>
-            <button id="add-review" class="btn"> Add review </button>  
-        </section>
+            <button type="submit" id="add-review" class="btn"> Add review </button>  
+        </form>
         <footer class="footer">
             <div class="privacy-policy">
                 <a href="#">Privacy Policy</a>

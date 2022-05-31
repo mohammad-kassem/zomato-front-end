@@ -18,13 +18,7 @@ window.onload = function () {
     restaurant_details_content.id = "restaurant-details";
     restaurant_details_content.innerHTML = `<div class="restaurant-images page-content">
       <div class="restaurant-image-box">
-      <img src="../assets/mcdonalds.jpg" alt="">
-      </div>
-      <div class="restaurant-image-box">
-          <img src="../assets/mcdonalds.jpg" alt="">
-      </div>
-      <div class="restaurant-image-box">
-          <img src="../assets/mcdonalds.jpg" alt="">
+        <img src="../assets/mcdonalds.jpg" alt="">
       </div>
   </div>
   <div class="restaurant-details page-content">
@@ -45,7 +39,7 @@ window.onload = function () {
               </div>
           </div>
           <p> ${details.restaurant_description} </p>
-          <h3> average cost</h3>
+          <h3> Average cost</h3>
           <p>
               ${details.average_cost}$ for two people (appprox) 
           </p>
@@ -80,7 +74,6 @@ window.onload = function () {
               <div class="rating rating-small">
                   <i class="fa-solid fa-star"></i> ${reviews[i].rating}
               </div>
-              <h2>Highly recommended!</h2>
               <p> ${reviews[i].content} </p>
           </div>`;
       reviews_section.appendChild(review_item);
@@ -89,8 +82,9 @@ window.onload = function () {
 };
 
 // submits the review to the database hides the review popup and resets its values
-let add_review_button = document.getElementById("add-review");
-add_review_button.addEventListener("click", function () {
+let review_popup = document.getElementById("review-popup");
+review_popup.addEventListener("submit", function (event) {
+  event.preventDefault();
   let user_rating = document.getElementById("user-rating");
   let user_review = document.getElementById("user-review");
   let data = new FormData();
