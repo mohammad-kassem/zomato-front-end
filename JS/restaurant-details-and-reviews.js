@@ -38,6 +38,7 @@ window.onload = function () {
                   <i class="fa-solid fa-star"></i> ${details.restaurant_rating} 
               </div>
           </div>
+          <h3> Description </h3> 
           <p> ${details.restaurant_description} </p>
           <h3 class="average-cost"> Average cost</h3>
           <p class="restaurant-description">
