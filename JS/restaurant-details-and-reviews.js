@@ -63,7 +63,7 @@ window.onload = function () {
       review_item.classList.add("review");
       review_item.innerHTML = `<div class="review-header">
               <div class="user">
-                  <img src="../assets/theuser.png" alt="">
+                  <img src="../assets/theuser.png" height="50px" width="50px" alt="">
                   <h1> ${reviews[i].full_name} </h1>
               </div>
               <div class="date">
