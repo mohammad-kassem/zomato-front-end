@@ -294,6 +294,11 @@ nav {
     padding: 1vw 3vw;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #831c00;
 }
 
 .review {
