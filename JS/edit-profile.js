@@ -19,6 +19,7 @@ window.onload = function () {
     url: `http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/get-profile-details.php?user_id=${user_id}`,
   }).then(function (response) {
     profile_details = response.data;
+    console.log(profile_details);
     full_name.innerText = profile_details.full_name;
     first_name.value = profile_details.first_name;
     last_name.value = profile_details.last_name;
