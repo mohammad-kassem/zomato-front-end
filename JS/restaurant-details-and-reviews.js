@@ -1,12 +1,14 @@
 let url_string = window.location.href;
 let url = new URL(url_string);
 let user_id = url.searchParams.get("user_id");
+if (!user_id) window.location.href = "./login-and-singup.html";
 let restaurant_id = url.searchParams.get("restaurant_id");
-console.log("hello");
+
 
 window.onload = function () {
   let reviews_section = document.getElementById("reviews-section");
 
+  // for the restaurant details display
   axios({
     method: "get",
     url: `http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/retaurant-details.php?user_id=${user_id}&restaurant_id=${restaurant_id}`,
@@ -55,6 +57,7 @@ window.onload = function () {
     restaurant_details_section.appendChild(restaurant_details_content);
   });
 
+  // for the restaurant reviews display
   axios({
     method: "get",
     url: `http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/display-reviews.php?user_id=${user_id}&restaurant_id=${restaurant_id}`,
@@ -85,6 +88,7 @@ window.onload = function () {
   });
 };
 
+// submits the review to teh database hides the review popup and resets its values
 let add_review_button = document.getElementById("add-review");
 add_review_button.addEventListener("click", function () {
   let user_rating = document.getElementById("user-rating");
@@ -108,3 +112,9 @@ add_review_button.addEventListener("click", function () {
     }
   });
 });
+
+add_review = document.getElementById("add-review");
+add_review.addEventListener("click", function(){
+  review_popup = document.getElementById("review-popup");
+  review_popup.Target.classList.toggle("hide");
+})

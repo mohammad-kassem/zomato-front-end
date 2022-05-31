@@ -3,7 +3,7 @@ window.onload = function () {
   let url_string = window.location.href;
   let url = new URL(url_string);
   let user_id = url.searchParams.get("user_id");
-  if (!user_id) window.location.href = "./pages/login-and-singup.html";
+  if (!user_id) window.location.href = "./login-and-singup.html";
 
   axios({
     method: "get",
@@ -37,8 +37,9 @@ window.onload = function () {
       //and always append the restaurant boxes to the most recent row
       row.appendChild(restaurant_box);
       restaurant_box.addEventListener("click", function () {
+        user_id = localStorage.getItem("user_id");
         window.location.href =
-          "./pages/restaurant-reviews.html?restaurant_id=" + restaurant_box.id;
+          "./pages/restaurant-reviews.html?user_id=" + user_id + "&restaurant_id=" + restaurant_box.id;
       });
     }
   });

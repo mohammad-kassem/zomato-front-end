@@ -1,6 +1,8 @@
+// defining the input variables
 let url_string = window.location.href;
 let url = new URL(url_string);
 let user_id = url.searchParams.get("user_id");
+if (!user_id) window.location.href = "./login-and-singup.html";
 let full_name = document.getElementById("full-name");
 let first_name = document.getElementById("first-name");
 let last_name = document.getElementById("last-name");
@@ -11,6 +13,8 @@ let old_password = document.getElementById("old-password");
 let new_password = document.getElementById("new-password");
 let confirm_password = document.getElementById("confirm-password");
 
+
+// gets the values of the user's profile from the database and displays them
 window.onload = function () {
   axios({
     method: "get",
@@ -26,6 +30,7 @@ window.onload = function () {
   });
 };
 
+// applies the changes by the user to the database
 let apply_changes = document.getElementById("apply-changes");
 apply_changes.addEventListener("click", function () {
   let data = new FormData();
@@ -49,7 +54,9 @@ apply_changes.addEventListener("click", function () {
   });
 });
 
+// cancels the changes and takes the user back to the display restaurants page
 let cancel_changes = document.getElementById("cancel-changes");
 cancel_changes.addEventListener("click", function () {
-  location.href = "../index.html";
+  user_id = localStorage.getItem("user_id");
+  location.href = "../index.html?user_id=" + user_id;
 });
