@@ -103,7 +103,6 @@ add_review_button.addEventListener("click", function () {
     url: "http://localhost/Project3-Zomato%20-Back%20-%20End/zomato-back-end/APIs/review-restaurant.php",
     data: data,
   }).then(function (response) {
-    console.log(response.data);
     if (response.data.response == "Review added successfully") {
       let review_popup = document.getElementById("review-popup");
       review_popup.classList.add("hide");
@@ -113,8 +112,15 @@ add_review_button.addEventListener("click", function () {
   });
 });
 
-add_review = document.getElementById("add-review");
-add_review.addEventListener("click", function(){
+new_review = document.getElementById("new-review");
+new_review.addEventListener("click", function(){
   review_popup = document.getElementById("review-popup");
-  review_popup.Target.classList.toggle("hide");
+  review_popup.classList.remove("hide");
+})
+
+
+exit_review = document.getElementById("exit-review");
+exit_review.addEventListener("click", function(){
+  review_popup = document.getElementById("review-popup");
+  review_popup.classList.add("hide");
 })

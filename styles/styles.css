@@ -328,10 +328,6 @@ img{
     display: none;
 }
 
-.show{
-    display: block;
-}
-
 #gr-out{
     position: absolute;
     top: 0; left: 0;
