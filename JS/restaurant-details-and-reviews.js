@@ -39,8 +39,8 @@ window.onload = function () {
               </div>
           </div>
           <p> ${details.restaurant_description} </p>
-          <h3> Average cost</h3>
-          <p>
+          <h3 class="average-cost"> Average cost</h3>
+          <p class="restaurant-description">
               ${details.average_cost}$ for two people (appprox) 
           </p>
       </div>

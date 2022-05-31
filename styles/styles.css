@@ -205,7 +205,11 @@ nav {
 }
 
 .restaurant-image-box {
-    width: 33%;
+    width: 100%;
+}
+
+.restaurant-image-box > img{
+    height: 30vh;
 }
 
 .restaurant-details {
@@ -234,7 +238,7 @@ nav {
     width: 50%;
 }
 
-.restaurant-logo>img {
+.restaurant-logo > img {
     width: 100px;
     height: 100px;
 }
