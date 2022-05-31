@@ -18,7 +18,6 @@ window.onload = function () {
     restaurant_details_content.id = "restaurant-details";
     restaurant_details_content.innerHTML = `<div class="restaurant-images page-content">
       <div class="restaurant-image-box">
-        <img src="../assets/mcdonalds.jpg" alt="">
       </div>
   </div>
   <div class="restaurant-details page-content">
@@ -64,7 +63,7 @@ window.onload = function () {
       review_item.classList.add("review");
       review_item.innerHTML = `<div class="review-header">
               <div class="user">
-                  <img src="../assets/user_pro.jpg" alyt="">
+                  <img src="../assets/theuser.png" height="50px" width="50px" alt="">
                   <h1> ${reviews[i].full_name} </h1>
               </div>
               <div class="date">
